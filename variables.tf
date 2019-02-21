@@ -147,6 +147,11 @@ variable "enable_dns_support" {
   default     = true
 }
 
+variable "enable_internet_gateway" {
+  description = "Should be true if you want to provision Internet Gateways for your public networks"
+  default     = true
+}
+
 variable "enable_nat_gateway" {
   description = "Should be true if you want to provision NAT Gateways for each of your private networks"
   default     = false
